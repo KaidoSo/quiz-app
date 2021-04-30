@@ -15,8 +15,20 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem 0;
+}
+
+.stamp {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+}
+.stamp > img {
+    width: 70px;
+    height: auto;
+    transform: rotate(70deg);
 }
 
 .main-container {
@@ -24,4 +36,37 @@ header {
     background-image: url('https://wallpapercave.com/wp/wp7074015.jpg');
     background-position: left;
     background-size: cover;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    padding: 0 1.5rem;
+}
+
+.img {
+    padding: 1rem;
+}
+
+.img > img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.answers-container {
+    padding: 2rem;
+}
+
+.answer {
+    font-size: 1.1rem;
+}
+
+.prison-mike-text {
+    font-size: .8rem;
+    padding: 5rem 1rem 0 12rem;
 }
