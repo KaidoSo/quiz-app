@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="http://fonts.cdnfonts.com/css/jmh-typewriter" rel="stylesheet">                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
     <title>the office quiz</title>
 </head>
 <body>
@@ -19,13 +21,13 @@
         </header>
         <main>
             <div class="question-container">
-                <div class="question">
+                <div id="question">
                     <div class="question-1">
                         <h3>What does Michael pretend to fire Pam over in season one?</h3>
                     </div>
                 </div>
-                <div class="img">
-                    <img src="https://www.sheknows.com/wp-content/uploads/2019/02/pam-michael-the-office-season-1-pilot.png?w=695&h=391&crop=1" alt="" srcset="">
+                <div id="quiz-img">
+                    <img src="https://www.sheknows.com/wp-content/uploads/2019/02/pam-michael-the-office-season-1-pilot.png?w=695&h=391&crop=1" alt="quiz-image">
                 </div>
                 <div class="answers">
                     
@@ -49,7 +51,7 @@
                 </div>
             </form>
             <div class="button-container">
-                <button class="next-button">
+                <button class="next-button" onclick="checkAnswer()">
                     Next
                 </button>
             </div>

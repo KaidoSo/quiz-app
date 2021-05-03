@@ -44,15 +44,15 @@ header {
     align-items: center;
 }
 
-.question {
+#question {
     padding: 0 1.5rem;
 }
 
-.img {
+#quiz-img {
     padding: 1rem;
 }
 
-.img > img {
+#quiz-img > img {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
