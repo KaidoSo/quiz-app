@@ -11,13 +11,14 @@ body {
     font-size: 16px;
     color: #fff;
     justify-content: center;
+    background-color: #314b86;
     min-height: 100vh;
 }
 
 header {
     position: relative;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 main {
@@ -26,11 +27,10 @@ main {
 
 
 .main-container {
-    min-width: 350px;
-    max-width: 600px;
-    background-image: url('https://wallpapercave.com/wp/wp7074015.jpg');
-    background-position: left;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .stamp {
@@ -45,9 +45,6 @@ main {
 }
 
 #start{
-    position: absolute;
-    top: 180px;
-    left: 33%;
     font-size: 2rem;
     height: 45px;
     width: 120px;
@@ -73,15 +70,17 @@ main {
 
 #question {
     padding: 0 1.5rem;
-    max-width: 350px;
+    width: 90%;
 }
 
 #quiz-img {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 #quiz-img > img {
-    max-width: 300px;
+    width: 90%;
     height: auto;
     border-radius: 10px;
 }
@@ -94,9 +93,11 @@ main {
 }
 
 .choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     line-height: 1.5;
-    text-align: center;
     border: 1px solid white;
     margin: 8px 0;
     border-radius: 10px;
@@ -112,16 +113,33 @@ main {
     transition: ease-in-out .2s;
 }
 
-.button-container {
+#prison-mike {
     display: flex;
-    justify-content: end;
-    padding-right: 2rem;
-    padding-top: .5rem;
+    justify-content: space-between;
 }
 
-#pm-text {
-    position: absolute;
-    top: 380px;
+.pm-img {
+    width: 180px;
+    height: auto;
+}
+
+p {
     font-size: .8rem;
-    padding: 4rem 1rem 0 12rem;
+    padding-top: 50px;
+    padding-right: 5px;
+}
+
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .choice {
+        height: 40px;
+    }
 }
