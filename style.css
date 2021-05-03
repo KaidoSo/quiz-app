@@ -20,6 +20,19 @@ header {
     padding: 2rem 0;
 }
 
+main {
+    position: relative;
+}
+
+
+.main-container {
+    min-width: 350px;
+    max-width: 600px;
+    background-image: url('https://wallpapercave.com/wp/wp7074015.jpg');
+    background-position: left;
+    background-size: cover;
+}
+
 .stamp {
     position: absolute;
     top: 15%;
@@ -31,11 +44,25 @@ header {
     transform: rotate(70deg);
 }
 
-.main-container {
-    max-width: 600px;
-    background-image: url('https://wallpapercave.com/wp/wp7074015.jpg');
-    background-position: left;
-    background-size: cover;
+#start{
+    position: absolute;
+    top: 180px;
+    left: 33%;
+    font-size: 2rem;
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #314b86;
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+#start:hover {
+    cursor: pointer;
+    color: red;
+    transition: ease-in-out .4s;
 }
 
 .question-container {
@@ -46,6 +73,7 @@ header {
 
 #question {
     padding: 0 1.5rem;
+    max-width: 350px;
 }
 
 #quiz-img {
@@ -91,7 +119,9 @@ header {
     padding-top: .5rem;
 }
 
-.prison-mike-text {
+#pm-text {
+    position: absolute;
+    top: 380px;
     font-size: .8rem;
     padding: 4rem 1rem 0 12rem;
 }

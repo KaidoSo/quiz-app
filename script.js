@@ -42,23 +42,33 @@ let questions = [{
 ]
 
 
-const start = document.getElementById('start');
-const quiz = document.getElementById('quiz');
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const quizImg = document.getElementById("quiz-img");
 const answerA = document.getElementById("A");
 const answerB = document.getElementById("B");
 const answerC = document.getElementById("C");
+const pmText = document.getElementById("pm-text")
 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 
 function renderQuestion() {
     let q = questions[runningQuestion];
-    question.innerHTML = "<h3>+ q.question +</h3>";
+    question.innerHTML = "<h3>"+ q.question +"</h3>";
     quizImg.innerHTML = "<img src="+ q.imgSrc +">";
     answerA.innerHTML = q.answerA;
     answerB.innerHTML = q.answerB;
     answerC.innerHTML = q.answerC;
 }
 
+start.addEventListener("click", startQuiz);
+
+//start quiz
+function startQuiz() {
+    start.style.display = "none";
+    pmText.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+}
