@@ -1,43 +1,64 @@
 // Questions object
-var questions = [{
+let questions = [{
     question: "What does Michael pretend to fire Pam over in season one?",
     imgSrc: "img/question-1.webp",
-    answer1: "Stealing post-it notes",
-    answer2: "Not answering the phone",
-    answer3: "Wearing her glasses",
-    correct: "answer1"
+    answerA: "Stealing post-it notes",
+    answerB: "Not answering the phone",
+    answerC: "Wearing her glasses",
+    correct: "answerA"
 },
 {
     question: "What does Kevin suggest Dwight put in his gun holster?",
     imgSrc: "img/question-2.webp",
-    answer1: "A cell phone",
-    answer2: "A banana",
-    answer3: "A toy gun",
-    correct: "answer2"
+    answerA: "A cell phone",
+    answerB: "A banana",
+    answerC: "A toy gun",
+    correct: "answerB"
 },
 {
     question: "How much did Michael's beloved plasma TV cost?",
     imgSrc: "img/question-3.webp",
-    answer1: "100$",
-    answer2: "500$",
-    answer3: "200$",
-    correct: "answer3"
+    answerA: "100$",
+    answerB: "500$",
+    answerC: "200$",
+    correct: "answerC"
 },
 {
     question: "What kind of sauce does Kevin ask for when being forced to eat broccoli?",
     imgSrc: "img/question-4.webp",
-    answer1: "Kethcup",
-    answer2: "Hollandaise",
-    answer3: "Mayonaise",
-    correct: "answer2"
+    answerA: "Kethcup",
+    answerB: "Hollandaise",
+    answerC: "Mayonaise",
+    correct: "answerB"
 },
 {
     question: "When role-playing a successful sales call with Jim and Michael, who does Dwight offend on the phone?",
     imgSrc: "img/question-5.webp",
-    answer1: "Fudd G. Packer",
-    answer2: "Moe Lester",
-    answer3: "William M. Buttlicker",
-    correct: "answer3"
+    answerA: "Fudd G. Packer",
+    answerB: "Seamour S. Kidmark",
+    answerC: "William M. Buttlicker",
+    correct: "answerC"
 }
 ]
+
+
+const start = document.getElementById('start');
+const quiz = document.getElementById('quiz');
+const question = document.getElementById("question");
+const quizImg = document.getElementById("quiz-img");
+const answerA = document.getElementById("A");
+const answerB = document.getElementById("B");
+const answerC = document.getElementById("C");
+
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+
+function renderQuestion() {
+    let q = questions[runningQuestion];
+    question.innerHTML = "<h3>+ q.question +</h3>";
+    quizImg.innerHTML = "<img src="+ q.imgSrc +">";
+    answerA.innerHTML = q.answerA;
+    answerB.innerHTML = q.answerB;
+    answerC.innerHTML = q.answerC;
+}
 

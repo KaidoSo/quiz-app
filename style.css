@@ -59,34 +59,36 @@ header {
 }
 
 .answers-container {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-.answer {
+.choice {
     font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid white;
+    margin: 8px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #314b86;
+    transition: ease-in-out .2s;
+    width: 300px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    color: red;
+    transition: ease-in-out .2s;
 }
 
 .button-container {
     display: flex;
     justify-content: end;
     padding-right: 2rem;
-}
-
-.next-button {
-    font-family: 'JMH Typewriter', sans-serif;
-    font-size: 2rem;
-    height: 50px;
-    width: 90px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #314b86;
-    transition: ease-in-out .4s;
-}
-
-.next-button:hover {
-    cursor: pointer;
-    color: red;
-    transition: ease-in-out .4s;
+    padding-top: .5rem;
 }
 
 .prison-mike-text {

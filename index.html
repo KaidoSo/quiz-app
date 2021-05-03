@@ -16,45 +16,27 @@
         <header>
             <h1>the office quiz</h1>
             <div class="stamp">
-                <img src="https://www.onlygfx.com/wp-content/uploads/2016/09/red-approved-stamp-2.png" alt="" srcset="">
+                <img src="https://www.onlygfx.com/wp-content/uploads/2016/09/red-approved-stamp-2.png" alt="approved-stamp">
             </div>
         </header>
         <main>
-            <div class="question-container">
-                <div id="question">
-                    <div class="question-1">
-                        <h3>What does Michael pretend to fire Pam over in season one?</h3>
+            <div id="start" style="display: none;">Start the Quiz!</div>
+            <div id="quiz">
+                <div class="question-container">
+                    <div id="question">
+                            <h3>What does Michael pretend to fire Pam over in season one?</h3>
+                    </div>
+                    <div id="quiz-img">
+                        <img src="https://www.sheknows.com/wp-content/uploads/2019/02/pam-michael-the-office-season-1-pilot.png?w=695&h=391&crop=1" alt="quiz-image">
                     </div>
                 </div>
-                <div id="quiz-img">
-                    <img src="https://www.sheknows.com/wp-content/uploads/2019/02/pam-michael-the-office-season-1-pilot.png?w=695&h=391&crop=1" alt="quiz-image">
-                </div>
-                <div class="answers">
-                    
+                <div class="answers-container">
+                    <div class="choice" id="A" onclick="checkAnswer('A')">Stealing post-it notes</div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')">Not answering the phone</div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')">Wearing her glasses</div>
                 </div>
             </div>
-            <form class="answers-container">
-                <div class="answer">
-                    <input type="radio" name="answer" class="answer-radio" id="answer1" value="">
-                    <label for="answer1" class="answer-label">Stealing post-it notes
-                    </label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" class="answer-radio" id="answer2" value="">
-                    <label for="answer2" class="answer-label">Not answering the phone
-                    </label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" class="answer-radio" id="answer3" value="">
-                    <label for="answer3" class="answer-label">Wearing her glasses
-                    </label>
-                </div>
-            </form>
-            <div class="button-container">
-                <button class="next-button" onclick="checkAnswer()">
-                    Next
-                </button>
-            </div>
+
             <div class="prison-mike-text">
                 <p>Prison Mike is here to scare you straight!</p>
                 <p>No gruel for you, if you can't get 100%.</p>
