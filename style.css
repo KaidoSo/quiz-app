@@ -78,7 +78,8 @@ main {
 }
 
 #try-again > button {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: typewriter, sans-serif;
     height: 70px;
     width: 190px;
     border-radius: 10px;
@@ -182,7 +183,6 @@ p {
     }
 
     #score{
-        font-size: 2rem;
         padding: 0 80px;
     }
 

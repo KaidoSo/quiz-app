@@ -34,8 +34,8 @@ let questions = [{
 {
     question: "When role-playing a successful sales call with Jim and Michael, who does Dwight offend on the phone?",
     imgSrc: "img/question-5.webp",
-    answerA: "Fudd G. Packer",
-    answerB: "Seamour S. Kidmark",
+    answerA: "Wallace G. Fudgepacker",
+    answerB: "Seamour S. Skidmark",
     answerC: "William M. Buttlicker",
     correct: "C"
 }
@@ -114,6 +114,6 @@ function scoreRender() {
             "img/0-mike.gif";
     
     scoreImg.innerHTML = "<img src="+ img +">";
-    scoreText.innerHTML = "<h1> There is "+ scorePercent +"% chance that you'll be the next Assistant to the Regional Manager!</h1>"
+    scoreText.innerHTML = "<h3> There is "+ scorePercent +"% chance that you'll be the next Assistant to the Regional Manager!</h3>"
     tryAgain.innerHTML = "<button onClick='window.location.reload(true)'>Try Again</button>";
 }
