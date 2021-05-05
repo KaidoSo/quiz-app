@@ -1,6 +1,6 @@
 @font-face {
     font-family: typewriter;
-    src: url(font/JMH\ Typewriter.ttf);
+    src: url("font/JMH\ Typewriter.ttf");
 }
 
 * {
