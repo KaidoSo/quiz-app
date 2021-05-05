@@ -1,3 +1,8 @@
+@font-face {
+    font-family: typewriter;
+    src: url(font/JMH\ Typewriter.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,7 @@
 body {
     display: flex;
     background-color: #f1f1f1;
-    font-family: 'JMH Typewriter', sans-serif;
+    font-family: typewriter, sans-serif;
     font-size: 16px;
     color: #fff;
     justify-content: center;
