@@ -182,6 +182,10 @@ p {
         padding: 50px 50px 0 10px;
     }
 
+    #question {
+        padding: 0 3rem;
+    }
+
     #score{
         padding: 0 80px;
     }
@@ -189,6 +193,4 @@ p {
     .choice {
         height: 40px;
     }
-
-
 }
