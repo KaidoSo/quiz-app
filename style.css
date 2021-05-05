@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'typewriter';
-    src: url("../Quiz/font/JMH Typewriter.ttf");
+    font-family: typewriter;
+    src: url("../quiz-app/font/JMH-Typewriter.ttf");
 }
 
 * {
@@ -12,7 +12,7 @@
 body {
     display: flex;
     background-color: #f1f1f1;
-    font-family: 'typewriter', sans-serif;
+    font-family: typewriter, sans-serif;
     font-size: 16px;
     color: #fff;
     justify-content: center;
